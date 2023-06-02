@@ -68,8 +68,8 @@ static void wupiPrintln(s32 line, const char* str)
 
 void WUPI_printTop(void)
 {
-    wupiPrintln(0, "Compat Title Installer v1.1");
-    wupiPrintln(1, "COPYRIGHT (c) 2021 TheLordScruffy");
+    wupiPrintln(0, "WiiHackU");
+    wupiPrintln(1, "Credits to TheLordScruffy");
 }
 
 /* I don't care enough to implement a va arg function */
@@ -181,7 +181,7 @@ int entry(void)
     OSScreenClearBufferEx(1, 0);
 
     WUPI_resetScreen();
-    WUPI_putstr("Press A to install the Homebrew Channel to the Wii Menu.");
+    WUPI_putstr("Press A to start the process (im sure thats what your here for)");
     WUPI_putstr("Press HOME to exit.");
 
     while (1)
